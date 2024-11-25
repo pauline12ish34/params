@@ -1,0 +1,97 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>My Django Project</title>
+    <style>
+        body {
+            font-family: 'Space Mono';
+        }
+        #cap{
+            font-weight:bolder;
+            font-size:18;
+        }
+      .login{
+                
+        background-color:#25D366;
+        color:#FFFFFF;
+        border:3px solid #25D366;
+              }
+        
+    </style>
+</head>
+<body>
+    {% block content %}
+    <div>
+        <div class ="container">
+        <nav class="navbar navbar-expand-lg navbar-light row">
+            <a class="navbar-brand inline col-sm" href="#">  <img src="{% static 'imgs/TrafficJam.svg' %}"> <span>PARAMS</span> </a>
+           
+          
+            <div class="col-sm " id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto ">
+                <li class="nav-item active px-4">
+                  <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link" href="#">Parking</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link " href="#">Contact Us</a>
+                </li>
+                <li class="nav-item px-4  "> <button class=" logbtn my-2 my-sm-0 p-2" type="submit">Logout</button></li>
+              </ul>
+             
+            </div>
+            
+          </nav>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="{% static 'imgs/parkinggate1.png' %}">
+                    <p id="cap">“Your car’s security Our Quality”</p>
+                </div>
+                <div class="col-sm">
+                    <h3> Login an account </h3>
+                    <p class="d-inline-flex"><span> New to Parms?</span>  <a  href="/signup">Sign Up Now</a></p>
+                <form class="p-8">
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="eg: johndoe@gmail.com" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+                    </div>
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class=" w-100 rounded py-2 login">Login</button>
+
+                    <img src="{% static 'imgs/Vector3.svg' %}" class="w-50"> OR <img src="{% static 'imgs/Vector3.svg' %}" class="w-45">
+
+                    <button type="submit" class=" w-100 rounded-4 py-2  border-2 bg-white mt-4"> <img src="{% static 'imgs/flat-color-icons_google.svg' %}">  Continue with Google</button>
+
+
+                </form>
+                <div>
+
+  </div>
+  
+
+    {% endblock %}
+    {% comment %} <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> {% endcomment %}
+
+</body>
+</html>
+
+

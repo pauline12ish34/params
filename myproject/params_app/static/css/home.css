@@ -1,0 +1,51 @@
+/* Global styles */
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+
+
+/* Header section */
+h1 {
+    font-size: 3rem;
+    color: #198754; /* Green color for the title */
+}
+
+p {
+    font-size: 1.1rem;
+    color: #6c757d; /* Bootstrap gray color */
+}
+
+.btn-outline-success {
+    border-radius: 25px;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+}
+
+/* Stats section */
+h2 {
+    font-size: 2.5rem;
+    color: #198754; /* Green color for stats */
+}
+
+p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* App store buttons */
+img {
+    max-width: 200px;
+    margin: 10px auto;
+}
+
+/* About Us Section */
+h3 {
+    font-size: 2rem;
+    color: #212529; /* Dark color for the About Us heading */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6c757d;
+}

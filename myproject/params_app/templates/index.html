@@ -1,0 +1,98 @@
+{% load static %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Your Parking Space</title>
+    
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    <link href="{% static 'css/home.css' %}" rel="stylesheet">
+    <style>
+        
+    </style>
+
+</head>
+<body>
+    <div class="container my-5">
+        <div class ="container">
+            <nav class="navbar navbar-expand-lg navbar-light row">
+                <a class="navbar-brand inline col-sm" href="#">  <img src="{% static 'imgs/TrafficJam.svg' %}"> <span>PARAMS</span> </a>
+               
+              
+                <div class="col-sm " id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active px-4">
+                      <a class="nav-link" href="#">Home </a>
+                    </li>
+                    <li class="nav-item px-4">
+                      <a class="nav-link" href="#">Parking</a>
+                    </li>
+                    <li class="nav-item px-4">
+                      <a class="nav-link " href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item px-4  "> <button class=" logbtn my-2 my-sm-0 p-2" type="submit">Logout</button></li>
+                  </ul>
+                 
+                </div>
+                
+              </nav>
+            </div>
+
+        <!-- Header Section -->
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="fw-bold">Finding Your Parking Space</h1>
+                <p>No more struggling. Say Bye to hassles of finding parking lots and Hello to stress-free parking System. Your time is valuable.</p>
+                <a href="#" class="btn btn-outline-success btn-lg">Get Started</a>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'imgs/car_home.svg' %}" alt="Parking Image" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="row text-center my-5">
+            <div class="col-md-3">
+                <h2 class="fw-bold">24/7</h2>
+                <p>Hours per week</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="fw-bold">400 +</h2>
+                <p>Cars using our system</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="fw-bold">150 +</h2>
+                <p>Parking lots</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="fw-bold">3 +</h2>
+                <p>Years of System Usage</p>
+            </div>
+        </div>
+
+        <!-- App Store Links -->
+        <div class="row text-center my-5">
+            <div class="col-md-6">
+                <a href="#"><img src="{% static 'imgs/playstore.svg' %}" alt="Google Play" class="img-fluid"></a>
+            </div>
+            <div class="col-md-6">
+                <a href="#"><img src="{% static 'imgs/apple_icon.svg' %}" alt="App Store" class="img-fluid"></a>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="row my-5">
+            <div class="col-md-12 text-center">
+                <h3 class="fw-bold">About Us</h3>
+                <p>Parms is your go-to parking management solution, simplifying the parking experience for drivers and providers. Our platform connects users with real-time parking availability, offering features like reservations and payment integration. We aim to reduce the hassle of finding parking, making it more convenient for everyone.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+.sidebar .nav-item a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.sidebar .nav-item a:hover {
+    background-color: #145c32; /* Darker green for hover effect */
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 250px; /* Match the sidebar width */
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 100vh; /* Ensure it takes up full height */
+    overflow: auto;
+}
+
+/* Dashboard Cards */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Summary Section */
+.summary-section {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    margin-bottom: 30px;
+}
+
+.summary-section .card {
+    flex: 1; /* Equal size cards */
+    text-align: center;
+    color: white;
+}
+
+.card.danger {
+    background-color: #FE3F3F; /* Red for Users */
+}
+
+.card.success {
+    background-color: #42AF60; /* Green for Cars */
+}
+
+.card.primary {
+    background-color: #4E5EF2; /* Blue for Billings */
+}
+
+.purple {
+    background-color: #6f42c1; /* Purple for Locations */
+}
+
+
+ul.list-group {
+    margin: 20px 0;
+    padding: 0;
+}
+
+ul.list-group .list-group-item {
+    border: none; /* Remove borders */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f1f3f5;
+    color: #212529;
+    font-size: 14px;
+}
+
+ul.list-group .list-group-item span {
+    font-weight: bold;
+    float: right;
+}
+
+/* Headers and Titles */
+h5 {
+    font-weight: bold;
+    color:#42AF60; /* Matching with sidebar green */
+    margin-bottom: 20px;
+}
+
+/* Sidebar Styling */
+/* Sidebar Styling */
+.sidebar {
+    background-color: #198754;   
+    height: 100vh;
+
+    color: white;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full-width sidebar for mobile */
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding-top: 20px;
+    }
+
+    .summary-section {
+        flex-wrap: wrap;
+    }
+
+    .summary-section .card {
+        margin-bottom: 20px;
+    }
+}
