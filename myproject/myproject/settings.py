@@ -29,7 +29,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 # Application definition
-ALLOWED_HOSTS = ["params-v1.onrender.com","www.params-v1.onrender.com"]
+ALLOWED_HOSTS = ["params-v1.onrender.com", "127.0.0.1"]
 
 
 
@@ -54,7 +54,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",  # Add this
-    'myproject.middleware.RedirectToDomainMiddleware',  # Add this line
+    # 'myproject.middleware.RedirectToDomainMiddleware',  # Add this line
 
 
 ]
