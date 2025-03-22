@@ -24,8 +24,12 @@ SECRET_KEY = "django-insecure--2=%yzl50=$hgzm=c-&4pep!6%qkaz1637@th5q@35+&u=9mpb
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = False
 
-ALLOWED_HOSTS = []
+
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["parms.onrender.com", "127.0.0.1", "localhost"]
+
 
 
 # Application definition
@@ -48,7 +52,11 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",  # Add this
+
 ]
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 
 ROOT_URLCONF = "myproject.urls"
 
