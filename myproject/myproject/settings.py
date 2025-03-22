@@ -54,7 +54,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",  # Add this
-    # 'myproject.middleware.RedirectToDomainMiddleware',  # Add this line
+    'myproject.middleware.RedirectToDomainMiddleware',  # Add this line
 
 
 ]
