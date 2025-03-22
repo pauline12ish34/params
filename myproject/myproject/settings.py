@@ -28,7 +28,7 @@ DEBUG = True
 
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ["parms.onrender.com", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["params-v1.onrender.com", "localhost", "127.0.0.1"]
 
 
 
