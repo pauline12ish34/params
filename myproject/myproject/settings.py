@@ -28,7 +28,8 @@ DEBUG = True
 
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ["params-v1.onrender.com"]
+# Application definition
+ALLOWED_HOSTS = ["params-v1.onrender.com","www.params-v1.onrender.com"]
 
 
 
@@ -53,6 +54,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",  # Add this
+    'myproject.middleware.RedirectToDomainMiddleware',  # Add this line
+
 
 ]
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
