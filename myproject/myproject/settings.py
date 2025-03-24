@@ -23,8 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure--2=%yzl50=$hgzm=c-&4pep!6%qkaz1637@th5q@35+&u=9mpb"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
 
 # ALLOWED_HOSTS = []
@@ -53,8 +53,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",  # Add this
-    'myproject.middleware.RedirectToDomainMiddleware',  # Add this line
+    "whitenoise.middleware.WhiteNoiseMiddleware",  
 
 
 ]

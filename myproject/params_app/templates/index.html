@@ -179,16 +179,16 @@
                 <div class="col-sm" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active px-4">
-                            <a class="nav-link" href="http://127.0.0.1:8000">Home</a>
+                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item px-4">
-                            <a class="nav-link" href="http://127.0.0.1:8000/#aboutus">About Us</a>
+                            <a class="nav-link" href="#aboutus">About Us</a>
                         </li>
                         <li class="nav-item px-4">
                             <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
                         </li>
                         <li class="nav-item px-3">
-                            <a href="http://127.0.0.1:8000/login" class="btn" style="background-color: #b2f0d7;">Login</a>
+                            <a href="/login" class="btn" style="background-color: #b2f0d7;">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -203,7 +203,7 @@
                 <a href="signup" class="btn btn-outline-success btn-lg">Get Started</a>
             </div>
             <div class="col-md-6">
-                <img src="{% static 'imgs/car_home.svg' %}" alt="Parking Image" class="img-fluid rounded">
+                <img src="{% static '/imgs/car_home.svg' %}" alt="Parking Image" class="img-fluid rounded">
             </div>
         </div>
 
