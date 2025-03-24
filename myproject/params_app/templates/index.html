@@ -172,7 +172,7 @@
     <div class="container my-5">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light row">
-                <a class="navbar-brand col-sm" href="http://127.0.0.1:8000">
+                <a class="navbar-brand col-sm" href="/">
                     <img src="{% static 'imgs/TrafficJam.svg' %}" alt="PARMS Logo">
                     <span><b>PARMS</b></span>
                 </a>
@@ -182,7 +182,7 @@
                             <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item px-4">
-                            <a class="nav-link" href="#aboutus">About Us</a>
+                            <a class="nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item px-4">
                             <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
@@ -239,7 +239,7 @@
         <!-- Frame 1 -->
         <div class="col-md-6 mb-4 feedback-frame">
             <div class="p-4 border rounded shadow text-center bg-light">
-                <img src="{% static 'imgs/user1.png' %}" alt="User 1" class="rounded-circle mb-3" width="80" height="80">
+                <img src="{% static '/imgs/user1.png' %}" alt="User 1" class="rounded-circle mb-3" width="80" height="80">
                 <p class="lead fst-italic">"This system has completely transformed how I find parking. I save so much time every day!"</p>
                 <h5 class="fw-bold text-success">Happy Tumukunde</h5>
                 <p class="text-warning fw-bold">⭐⭐⭐⭐⭐</p>
@@ -248,7 +248,7 @@
         <!-- Frame 2 -->
         <div class="col-md-6 mb-4 feedback-frame">
             <div class="p-4 border rounded shadow text-center bg-light">
-                <img src="{% static 'imgs/user2.png' %}" alt="User 2" class="rounded-circle mb-3" width="80" height="80">
+                <img src="{% static '/imgs/user2.png' %}" alt="User 2" class="rounded-circle mb-3" width="80" height="80">
                 <p class="lead fst-italic">"Finding parking has never been this simple and stress-free. Great work, team!"</p>
                 <h5 class="fw-bold text-success">John Doe</h5>
                 <p class="text-warning fw-bold">⭐⭐⭐⭐⭐</p>
